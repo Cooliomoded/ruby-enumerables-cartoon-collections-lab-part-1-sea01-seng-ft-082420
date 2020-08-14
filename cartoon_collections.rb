@@ -9,8 +9,8 @@ end
 
 def list_dwarves(array)
   i = 0
-  array.each do |dwarf|
-    puts "#{i+1}. #{dwarf}"
+  array.each_with_index do |dwarf, index|
+    puts "#{index + 1}. #{dwarf}"
     i += 1
   end
 
